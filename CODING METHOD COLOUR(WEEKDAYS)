@@ -1,0 +1,28 @@
+package selfProgramming;
+
+public class mymethod3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/* write a method name myColor that takes sunday, monday, tuesday
+		 * and wednesday as parameter & display them below
+		 */
+		
+		String sunday= "yellow";
+		String monday= "Green";
+		String tuesday= "Red";
+		String wednesday= "blue";
+		
+		myColour (sunday, monday, tuesday, wednesday);
+		
+		
+	
+	}
+	
+	public static void myColour(String a, String b, String c, String d) {
+		System.out.println("");
+		System.out.println(" "+ a +", "+ b +", " + c +", " + d );
+	}
+
+}
