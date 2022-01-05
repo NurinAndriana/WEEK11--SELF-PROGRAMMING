@@ -1,0 +1,121 @@
+package selfProgramming;
+import java.util.Scanner;
+public class mymethod{
+public static void main (String[]args) {   // main method
+	
+	
+	
+	int x = 5;
+	int y = 8;
+	System.out.println("Introduction for method ");
+	showmessage();  // call method
+	System.out.println("Hello Yan");
+	showmessage1();
+	showmessage("Nurin");
+	showmessage(5);
+	showmessage ("Seoho ", 7);
+	showmessage(x,y);
+	int sum = showsum(x,y);
+	System.out.println("Total sum is " + sum);
+	int avg = sum/2;
+	System.out.println("The average = " + avg);
+	double total = showsum(3.4,10.6);
+	System.out.println("Total of double " + total);
+	double avg1 = total/2;
+	System.out.println("The average of total " + avg1);
+	int total2 = showsum();
+	System.out.println("Total2 : " + total2);
+	double total3 = showSumDouble(x,y);
+	System.out.println(" Total3 : " + total3);
+}
+	
+	public static void showmessage() {   // call method with no argument
+		
+		System.out.println("Helo Malaysia");
+	}
+	
+	public static void showmessage1() {
+		
+		System.out.println("Hello UUM");
+	}
+	
+	public static void showmessage(String name) {
+		
+		System.out.println("Name is " + name);
+	}
+	public static void showmessage(int r) {
+		
+		System.out.println("Number is " + r);
+		
+	}
+	public static void showmessage(String name, int p) {
+		
+		System.out.println("Name is " + name + " Number " + p);
+		for(int i =0; i<p; i++) {
+			System.out.println("Name is " + name);
+		}
+	}
+	public static void showmessage(int k, int v) {
+		
+		System.out.println("First number : " + k);
+		System.out.println("Second number : " + v);
+		
+		int sum = k+v;
+		
+		System.out.println("Sum is " + sum);
+	}
+	
+	public static int showsum(int x, int y) {
+		
+		int sum = x+y;
+		return sum;
+		
+	}
+	
+	public static double showsum(double a, double b) {
+		
+		double total = a+b;
+	    return total;
+	}
+	
+	public static int showsum() {
+		
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter five numbers:");
+		 int[]total2 = new int[5];
+		 int sum =0;
+		 for(int i=0; i<total2.length; i++) {
+		        
+			 total2 [i] = in.nextInt();
+			 
+		      sum = sum+ total2[i];
+		      
+		 }
+		 
+		 return sum;
+		       
+
+	}
+	
+	public static double showSumDouble(int x, int y) {
+		
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter four double numbers:");
+		 double total3[][] = new double[2][2];
+		 double sum =0;
+		 for(int i=0; i<total3.length; i++) {
+		    for(int k =0; k<total3.length; k++) {    
+			 total3[i][k] = in.nextDouble();
+			 
+		      sum = sum + total3[i][k];
+		      
+	}}
+		 return sum;
+	} 
+	/*	 for(int i=0; i<total3.length; i++) 
+			    for(int k =0; k<total3.length; k++) {
+			    	
+			    	System.out.println("i = " + i + "k = " + k);
+			    	System.out.println(total3[i][k]);
+			    } */
+}
