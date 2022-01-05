@@ -1,0 +1,30 @@
+package selfProgramming;
+import java.util.Scanner;
+public class mymethod1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner obj = new Scanner(System.in);
+		
+		mymethod1 no = new mymethod1();
+		int radius;
+		double area;
+		System.out.println("Enter radius : ");
+		radius = obj.nextInt();
+		
+		area = no.showArea(radius);
+		System.out.println("The area is " + area);
+		
+	}
+		double showArea(int r) {
+			
+			double area = 3.142*r*r;
+			return area;
+		}
+		
+		
+		
+	
+
+}
