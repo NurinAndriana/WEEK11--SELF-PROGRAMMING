@@ -1,0 +1,38 @@
+package selfProgramming;
+import java.util.Scanner;
+public class mymethod4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// write a method to check whether the entered number is positive or not
+		
+		Scanner in = new Scanner (System.in);
+		
+		int number;
+		
+		System.out.println("Enter a number");
+		number = in.nextInt();
+		
+		boolean positive = mynumber(number);
+		
+		if (positive==true) 
+		    System.out.println("positive number");
+		    else 
+		    	System.out.println("negative number");
+		
+
+	}
+	
+	public static boolean mynumber(int number) {
+		
+		System.out.println("Enter number " + number);
+		
+		if (number>0)
+			
+		 return true;
+		else 
+			return false;
+	}
+
+}
