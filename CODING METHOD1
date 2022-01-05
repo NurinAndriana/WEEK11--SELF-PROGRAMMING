@@ -1,0 +1,26 @@
+package selfProgramming;
+
+public class mymethod2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// write a method name myCollection that takes 3 parameters - an int, a double and a string
+		
+		int age ;
+		double height;
+		String name;
+		
+		
+       myCollection ("Nurin", 20, 156.0);
+		
+	}
+	
+	public static void myCollection(String name, int age, double height) {
+		
+		System.out.println("Name " + name);
+		System.out.println("Age " + age);
+		System.out.println("Height " + height);
+	}
+
+}
